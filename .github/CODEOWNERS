@@ -1,0 +1,153 @@
+# =============================================================
+# CODEOWNERS - Shivam Hospital Smart-App
+# Repository: DevSecOps-Zero-to-Hero
+# Owner: Adishesh
+# =============================================================
+# Syntax: file-path    @github-username
+# =============================================================
+
+# -------------------------------------------------------------
+# DEFAULT — Adishesh reviews everything
+# -------------------------------------------------------------
+*                                           @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MICROSERVICES — Auth Service (Most Sensitive)
+# -------------------------------------------------------------
+/services/auth-service/                     @adisheshanjaneyalu-lang
+/services/auth-service/src/                 @adisheshanjaneyalu-lang
+/services/auth-service/Dockerfile           @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MICROSERVICES — Appointment Service
+# -------------------------------------------------------------
+/services/appointment-service/              @adisheshanjaneyalu-lang
+/services/appointment-service/src/          @adisheshanjaneyalu-lang
+/services/appointment-service/Dockerfile    @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MICROSERVICES — Records Service
+# -------------------------------------------------------------
+/services/records-service/                  @adisheshanjaneyalu-lang
+/services/records-service/src/              @adisheshanjaneyalu-lang
+/services/records-service/Dockerfile        @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MICROSERVICES — Billing Service (Financial - Sensitive)
+# -------------------------------------------------------------
+/services/billing-service/                  @adisheshanjaneyalu-lang
+/services/billing-service/src/              @adisheshanjaneyalu-lang
+/services/billing-service/Dockerfile        @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MICROSERVICES — Notification Service
+# -------------------------------------------------------------
+/services/notification-service/             @adisheshanjaneyalu-lang
+/services/notification-service/src/         @adisheshanjaneyalu-lang
+/services/notification-service/Dockerfile   @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MICROSERVICES — Inventory Service
+# -------------------------------------------------------------
+/services/inventory-service/                @adisheshanjaneyalu-lang
+/services/inventory-service/src/            @adisheshanjaneyalu-lang
+/services/inventory-service/Dockerfile      @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# INFRASTRUCTURE — Terraform (Very Sensitive)
+# -------------------------------------------------------------
+/terraform/                                 @adisheshanjaneyalu-lang
+/terraform/main.tf                          @adisheshanjaneyalu-lang
+/terraform/variables.tf                     @adisheshanjaneyalu-lang
+/terraform/outputs.tf                       @adisheshanjaneyalu-lang
+/terraform/backend.tf                       @adisheshanjaneyalu-lang
+/terraform/modules/                         @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# KUBERNETES — K8s Manifests (Very Sensitive)
+# -------------------------------------------------------------
+/kubernetes/                                @adisheshanjaneyalu-lang
+/kubernetes/deployments/                    @adisheshanjaneyalu-lang
+/kubernetes/services/                       @adisheshanjaneyalu-lang
+/kubernetes/ingress/                        @adisheshanjaneyalu-lang
+/kubernetes/configmaps/                     @adisheshanjaneyalu-lang
+/kubernetes/secrets/                        @adisheshanjaneyalu-lang
+/kubernetes/namespaces/                     @adisheshanjaneyalu-lang
+/kubernetes/rbac/                           @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# HELM CHARTS
+# -------------------------------------------------------------
+/helm/                                      @adisheshanjaneyalu-lang
+/helm/templates/                            @adisheshanjaneyalu-lang
+/helm/values.yaml                           @adisheshanjaneyalu-lang
+/helm/Chart.yaml                            @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# CI/CD PIPELINES — GitHub Actions (Very Sensitive)
+# -------------------------------------------------------------
+/.github/                                   @adisheshanjaneyalu-lang
+/.github/workflows/                         @adisheshanjaneyalu-lang
+/.github/workflows/gitleaks-worflow.yaml    @adisheshanjaneyalu-lang
+/.github/workflows/ci-cd.yaml               @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# CI/CD PIPELINES — Jenkins
+# -------------------------------------------------------------
+/Jenkinsfile                                @adisheshanjaneyalu-lang
+/jenkins/                                   @adisheshanjaneyalu-lang
+/jenkins/pipelines/                         @adisheshanjaneyalu-lang
+/jenkins/shared-library/                    @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# ARGOCD — GitOps (Sensitive)
+# -------------------------------------------------------------
+/argocd/                                    @adisheshanjaneyalu-lang
+/argocd/applications/                       @adisheshanjaneyalu-lang
+/argocd/projects/                           @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# MONITORING — Prometheus & Grafana
+# -------------------------------------------------------------
+/monitoring/                                @adisheshanjaneyalu-lang
+/monitoring/prometheus/                     @adisheshanjaneyalu-lang
+/monitoring/grafana/                        @adisheshanjaneyalu-lang
+/monitoring/alerts/                         @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# DATABASE CONFIGS (Very Sensitive)
+# -------------------------------------------------------------
+/config/                                    @adisheshanjaneyalu-lang
+/config/database/                           @adisheshanjaneyalu-lang
+/config/rds/                                @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# SECURITY FILES (Most Sensitive)
+# -------------------------------------------------------------
+/.env.example                               @adisheshanjaneyalu-lang
+/.gitignore                                 @adisheshanjaneyalu-lang
+/.pre-commit-config.yaml                    @adisheshanjaneyalu-lang
+/custom-rules.toml                          @adisheshanjaneyalu-lang
+/trivy.yaml                                 @adisheshanjaneyalu-lang
+/sonar-project.properties                   @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# DOCKER FILES
+# -------------------------------------------------------------
+/docker-compose.yaml                        @adisheshanjaneyalu-lang
+/docker-compose.yml                         @adisheshanjaneyalu-lang
+*.Dockerfile                                @adisheshanjaneyalu-lang
+Dockerfile                                  @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# AWS & CLOUD CONFIGS (Very Sensitive)
+# -------------------------------------------------------------
+/aws/                                       @adisheshanjaneyalu-lang
+/.aws/                                      @adisheshanjaneyalu-lang
+/eksctl/                                    @adisheshanjaneyalu-lang
+
+# -------------------------------------------------------------
+# DOCUMENTATION
+# -------------------------------------------------------------
+/docs/                                      @adisheshanjaneyalu-lang
+/README.md                                  @adisheshanjaneyalu-lang
